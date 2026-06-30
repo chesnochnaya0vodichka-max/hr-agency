@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR Agency</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="logo">HR Agency</div>
+
+    <nav class="nav">
+      <a href="#services">Услуги</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <button class="btn primary">Консультация</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-text reveal">
+      <h1>Находим сотрудников, которые усиливают ваш бизнес</h1>
+      <p>Подбираем специалистов по всей России — от линейного персонала до руководителей.</p>
+
+      <div class="hero-actions">
+        <button class="btn primary">Получить консультацию</button>
+        <button class="btn ghost">Позвонить</button>
+      </div>
+
+      <div class="hero-bullets">
+        <span>✔️ Работаем по всей России</span>
+        <span>✔️ Первые кандидаты за 3–5 дней</span>
+        <span>✔️ Сопровождение до выхода</span>
+      </div>
+    </div>
+
+    <div class="glass hero-card reveal">
+      <div class="stat">
+        <div class="num" data-count="95">0</div>
+        <div>вакансий закрываем</div>
+      </div>
+
+      <div class="stat">
+        <div class="num" data-count="300">0</div>
+        <div>успешных подборов</div>
+      </div>
+
+      <div class="stat">
+        <div class="num" data-count="14">0</div>
+        <div>дней средний срок</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LOGOS -->
+<section class="logos">
+  <div class="container">
+    <div class="logos-line">
+      <span>Производство</span>
+      <span>Логистика</span>
+      <span>Строительство</span>
+      <span>Retail</span>
+      <span>HoReCa</span>
+      <span>IT</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section">
+  <div class="container">
+    <h2 class="reveal">Почему нам доверяют</h2>
+
+    <div class="grid-3">
+
+      <div class="card glass reveal">
+        ⚡️ <h3>Быстрый старт</h3>
+        <p>Запускаем поиск сразу после заявки.</p>
+      </div>
+
+      <div class="card glass reveal">
+        🎯 <h3>Точный подбор</h3>
+        <p>Отбираем только релевантных кандидатов.</p>
+      </div>
+
+      <div class="card glass reveal">
+        🤝 <h3>Сопровождение</h3>
+        <p>До выхода сотрудника и адаптации.</p>
+      </div>
+
+      <div class="card glass reveal">
+        📈 <h3>Экономия времени</h3>
+        <p>Берём весь рекрутинг на себя.</p>
+      </div>
+
+      <div class="card glass reveal">
+        🔍 <h3>База кандидатов</h3>
+        <p>Используем собственные и внешние каналы.</p>
+      </div>
+
+      <div class="card glass reveal">
+        🛡 <h3>Конфиденциальность</h3>
+        <p>Защищаем данные и процесс поиска.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <h2 class="reveal">Услуги</h2>
+
+    <div class="grid-2">
+
+      <div class="card glass hover reveal">
+        <h3>Подбор персонала</h3>
+        <p>Полный цикл рекрутинга под ключ.</p>
+      </div>
+
+      <div class="card glass hover reveal">
+        <h3>Массовый подбор</h3>
+        <p>Склады, производство, логистика.</p>
+      </div>
+
+      <div class="card glass hover reveal">
+        <h3>Точечный поиск</h3>
+        <p>Редкие специалисты и эксперты.</p>
+      </div>
+
+      <div class="card glass hover reveal">
+        <h3>Руководители</h3>
+        <p>ТОП и middle management.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section id="cases" class="section">
+  <div class="container">
+    <h2 class="reveal">Кейсы</h2>
+
+    <div class="case glass reveal">
+      <h3>Производственная компания</h3>
+      <p>Закрыли 18 вакансий за 24 дня</p>
+    </div>
+
+    <div class="case glass reveal">
+      <h3>Логистика</h3>
+      <p>Сформировали складскую команду из 25 сотрудников</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="section">
+  <div class="container">
+    <h2 class="reveal">Отзывы</h2>
+
+    <div class="slider glass reveal">
+
+      <button class="arrow" onclick="prevReview()">←</button>
+
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p id="reviewText">Закрыли 12 вакансий быстрее срока.</p>
+        <span id="reviewAuthor">Директор компании</span>
+      </div>
+
+      <button class="arrow" onclick="nextReview()">→</button>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <h2 class="reveal">FAQ</h2>
+
+    <div class="faq">
+
+      <div class="faq-item glass">
+        <button onclick="toggleFAQ(this)">Сколько занимает подбор?</button>
+        <div class="answer">В среднем 10–20 дней.</div>
+      </div>
+
+      <div class="faq-item glass">
+        <button onclick="toggleFAQ(this)">Работаете ли по регионам?</button>
+        <div class="answer">Да, по всей России.</div>
+      </div>
+
+      <div class="faq-item glass">
+        <button onclick="toggleFAQ(this)">Какие гарантии?</button>
+        <div class="answer">Бесплатная замена кандидата.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container reveal">
+    <h2>Готовы найти сотрудников?</h2>
+    <button class="btn primary">Оставить заявку</button>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contacts" class="section">
+  <div class="container">
+    <h2 class="reveal">Заявка</h2>
+
+    <form class="form glass reveal">
+      <input placeholder="Имя"/>
+      <input placeholder="Телефон"/>
+      <input placeholder="Компания"/>
+      <input placeholder="Кого ищете"/>
+
+      <textarea placeholder="Комментарий"></textarea>
+
+      <button type="submit" class="btn primary">Отправить</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    HR Agency © 2026
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
